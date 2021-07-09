@@ -199,7 +199,11 @@ def six(input):
     # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    pass
+    count = 0
+    for i in input.lower():
+        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
+            count += 1
+    return count
 
 
     # <QUESTION 8>
