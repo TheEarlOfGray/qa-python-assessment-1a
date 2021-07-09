@@ -122,7 +122,16 @@ def three(arg1):
     # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    pass
+    list_from_string = arg1.split()
+    results = []
+    count = 0
+    for i in list_from_string:
+        for j in i:
+            count = count + int(j)
+            results.append(count)
+        count = 0
+    results = sorted(results)
+    return results[len(results) - 1]
 
 
     # <QUESTION 5>
