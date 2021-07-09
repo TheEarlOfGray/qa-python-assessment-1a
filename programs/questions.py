@@ -181,7 +181,18 @@ def five(input):
     # Step through the logic here in order to solve the problem, you may find help(range) helpful.
 
 def six(input):
-    pass
+    if "ei" in input:
+        if input[(input.find("ei") - 1)] == "c":
+            return True
+        else:
+            return False
+    elif "ie" in input:
+        if input[(input.find("ie") - 1)] != "c":
+            return True
+        else:
+            return False
+    else:
+        return "I didn't understand the question."
 
 
     # <QUESTION 7>
