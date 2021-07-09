@@ -250,8 +250,13 @@ def eight(input):
     # Take a look at the documentation for Strings, List and range.
 
 def nine(inputString, char):
-    pass
-
+    inputString = inputString.replace(" ", "")
+    for count, i in enumerate(inputString, start=1):
+        if i == char:
+            print(count, i, char)
+            return count
+    return -1
+        
 
     # <QUESTION 10>
 
