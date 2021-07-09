@@ -222,7 +222,13 @@ def seven(input):
     # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    pass
+    rang1 = list(range(1, input + 1))
+    rang1 = list(reversed(rang1))
+    result = rang1[0]
+    rang1 = rang1[1:]
+    for i in rang1:
+        result = result * i
+    return result
 
 
     # <QUESTION 9>
