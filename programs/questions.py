@@ -89,7 +89,14 @@ def two(input):
     # No Hints for this question
 
 def three(arg1):
-    pass
+    if (arg1 % 3) == 0 and (arg1 % 5) != 0:
+        return "fizz"
+    elif (arg1 % 5) == 0 and (arg1 % 3) != 0:
+        return "buzz"
+    elif (arg1 % 5) == 0 and (arg1 % 3) == 0:
+        return "fizzbuzz"
+    else:
+        return "null"
 
 
     # <QUESTION 4>
